@@ -1,35 +1,15 @@
-# simple-authentication-system
+## Notes:
 
-This template should help get you started developing with Vue 3 in Vite.
+## Decisions
 
-## Recommended IDE Setup
+### Registration
+- Advanced validation for an email (if the email address is already registered ) was done after the user submits the form. Sometimes it is (mostly with username) done when the user finishes typing.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Login
+- When the user's signing in fails, they are not told which of the inputs (email or password) is incorrect (security reason). 
 
-## Customize configuration
+### Other
+- Even though the assignment stated 'no need for css or aything fancy' I added Tailwind CSS and some styling (because it didn't explicitly forbit it). 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## Findings
+- Yup, as a Javascript schema builder for validation accepts invalid format of an email address, for example abc@abc, without a top-level domain.
