@@ -9,7 +9,7 @@
 - When the user's signing in fails, they are not told which of the inputs (email or password) is incorrect (security reason). 
 
 ### Other
-- Even though the assignment stated 'no need for css or aything fancy' I added Tailwind CSS and some styling (because it didn't explicitly forbit it). 
+- Even though the assignment stated 'no need for css or aything fancy', I added Tailwind CSS and some styling (because it didn't explicitly forbit it). 
 
 ## Findings
-- Yup, as a Javascript schema builder for validation accepts invalid format of an email address, for example abc@abc, without a top-level domain.
+- 'Yup', as a Javascript schema builder for validation, accepts invalid format of an email address, for example abc@abc - without a top-level domain.
